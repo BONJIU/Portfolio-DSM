@@ -1,0 +1,24 @@
+/* ----------------------------------------------------------
+   INTERACTIVE SCROLL WORD
+----------------------------------------------------------- */
+.scrolly-word{
+  min-height:95vh;display:grid;place-items:center;position:relative;overflow:hidden;
+  background:var(--blue-night);color:white
+}
+.scrolly-word-bg{
+  position:absolute;inset:0;opacity:.7;
+  background:
+    radial-gradient(circle at 15% 35%,rgba(107,185,212,.17),transparent 25%),
+    radial-gradient(circle at 82% 65%,rgba(255,198,79,.11),transparent 22%)
+}
+.word-wrap{position:relative;z-index:2;width:min(1180px,calc(100% - 44px))}
+.word-small{color:var(--sky);font:800 .65rem/1 "DM Mono",monospace;letter-spacing:.17em;text-transform:uppercase}
+.word{
+  display:flex;flex-wrap:wrap;gap:0 18px;margin:25px 0 0;
+  max-width:1120px;font:800 clamp(3.8rem,9vw,10rem)/.82 Manrope;letter-spacing:-.09em
+}
+.word span{color:rgba(255,255,255,.12);transition:color .55s var(--ease),transform .55s var(--ease)}
+.word span.lit{color:var(--yellow);transform:translateY(-7px)}
+.word-note{
+  max-width:490px;color:rgba(255,255,255,.64);line-height:1.7;font-size:.93rem;margin-top:28px
+}

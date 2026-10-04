@@ -1,0 +1,39 @@
+/* ----------------------------------------------------------
+   LANGUAGES + CONTACT
+----------------------------------------------------------- */
+.final{padding:135px 0;background:var(--blue-night);color:white;position:relative;overflow:hidden}
+.final:before{
+  content:"";position:absolute;width:700px;height:700px;right:-330px;top:-260px;
+  border-radius:50%;border:105px solid rgba(107,185,212,.055)
+}
+.final-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;position:relative;z-index:1}
+.final h2{color:white;margin-top:15px}
+.lang-list{display:grid;gap:20px;margin-top:43px}
+.lang{display:grid;grid-template-columns:95px 1fr 100px;gap:13px;align-items:center}
+.lang strong{font-size:.8rem}
+.lang small{color:rgba(255,255,255,.55);text-align:right}
+.lang-bar{height:8px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden}
+.lang-bar span{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--yellow),var(--sky))}
+.contact-box{
+  background:var(--yellow);color:var(--blue);border-radius:36px;padding:43px 45px;min-height:390px;
+  display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden
+}
+.contact-box:after{
+  content:"";position:absolute;width:320px;height:320px;border-radius:50%;right:-110px;bottom:-120px;
+  border:50px solid rgba(8,68,99,.09)
+}
+.contact-box h3{
+  margin:0;font:800 clamp(2.8rem,5vw,5.4rem)/.83 Manrope;letter-spacing:-.08em
+}
+.contact-box p{max-width:500px;color:rgba(8,68,99,.73);line-height:1.8}
+.contact-links{display:flex;gap:8px;flex-wrap:wrap;position:relative;z-index:1}
+.contact-links a{
+  padding:9px 12px;border:1px solid rgba(8,68,99,.24);border-radius:999px;font-size:.71rem;font-weight:800;
+  transition:.25s
+}
+.contact-links a:hover{background:var(--blue);color:white;border-color:var(--blue)}
+
+footer{background:var(--blue);color:white;padding:28px 0}
+.footer-in{display:flex;justify-content:space-between;align-items:center;gap:25px}
+.footer-links{display:flex;gap:18px;color:#C9E7EF;font-size:.71rem}
+footer small{color:rgba(255,255,255,.56);font-size:.68rem}

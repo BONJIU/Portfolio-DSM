@@ -1,0 +1,22 @@
+.skills-band{background:var(--paper);padding:125px 0}
+.skills-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:60px}
+.skills-head p{max-width:390px;color:#667B82;line-height:1.75;margin:0}
+.skill-cloud{display:flex;flex-wrap:wrap;gap:10px;max-width:850px}
+.skill{
+  padding:11px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.38);
+  color:var(--blue);font-weight:700;font-size:.76rem;transition:transform .45s var(--ease),background .3s,color .3s
+}
+.skill:nth-child(3n){background:rgba(107,185,212,.13)}
+.skill:nth-child(4n){background:rgba(255,198,79,.23)}
+.skill:hover{transform:translateY(-5px) rotate(-1deg);background:var(--blue);color:white}
+
+.courses{padding:125px 0;background:var(--cream)}
+.course{
+  display:grid;grid-template-columns:1fr 180px 100px;gap:20px;padding:23px 0;border-top:1px solid var(--line);
+  transition:transform .4s var(--ease),padding .4s var(--ease),background .35s
+}
+.course:last-child{border-bottom:1px solid var(--line)}
+.course:hover{transform:translateX(12px);padding-left:13px;background:rgba(107,185,212,.05)}
+.course strong{color:var(--blue)}
+.course span,.course small{color:#6B7D83;font-size:.77rem}
+.course small{text-align:right}

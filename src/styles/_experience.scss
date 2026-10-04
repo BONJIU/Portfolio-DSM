@@ -1,0 +1,24 @@
+/* ----------------------------------------------------------
+   EXPERIENCE WITH HOVER REVEAL
+----------------------------------------------------------- */
+.experience{padding:140px 0 155px;background:var(--blue);color:white;position:relative;overflow:hidden}
+.exp-orb{
+  position:absolute;width:690px;height:690px;border-radius:50%;right:-310px;top:-305px;
+  border:90px solid rgba(107,185,212,.06)
+}
+.experience h2{color:#fff}
+.experience h2 em{color:var(--yellow)}
+.exp-intro{max-width:600px;color:rgba(255,255,255,.6);line-height:1.75;margin:22px 0 0}
+.exp-list{margin-top:75px;position:relative;z-index:1}
+.exp{
+  display:grid;grid-template-columns:145px 1fr 240px;gap:48px;padding:38px 0;
+  border-top:1px solid rgba(255,255,255,.15);transition:background .45s var(--ease),padding .45s var(--ease)
+}
+.exp:last-child{border-bottom:1px solid rgba(255,255,255,.15)}
+.exp:hover{background:rgba(255,255,255,.025);padding-left:12px;padding-right:12px}
+.exp-date{color:var(--sky);font:800 .64rem/1 "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
+.exp h3{margin:0;font:700 1.65rem/1 Manrope;letter-spacing:-.045em}
+.exp-role{margin-top:6px;color:var(--yellow);font-weight:700}
+.exp p{max-width:640px;color:rgba(255,255,255,.69);line-height:1.78;margin:15px 0 0}
+.exp-side{color:rgba(255,255,255,.55);font-size:.75rem;line-height:1.75}
+.exp-side b{color:#fff}

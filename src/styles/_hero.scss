@@ -1,0 +1,91 @@
+/* ----------------------------------------------------------
+   HERO / MOUSE LIGHT
+----------------------------------------------------------- */
+.hero{
+  min-height:100vh;position:relative;display:grid;align-items:center;overflow:hidden;
+  padding:140px 0 90px;background:var(--cream)
+}
+.hero-mesh{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hero-mesh .orb{
+  position:absolute;border-radius:50%;filter:blur(2px);will-change:transform
+}
+.hero-mesh .o1{
+  width:680px;height:680px;right:-260px;top:90px;background:var(--yellow);opacity:.52
+}
+.hero-mesh .o2{
+  width:420px;height:420px;left:-250px;bottom:-120px;background:var(--sky);opacity:.33
+}
+.hero-mesh .o3{
+  width:170px;height:170px;right:31%;bottom:5%;background:var(--sky);opacity:.2
+}
+.hero-light{
+  position:absolute;width:380px;height:380px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(107,185,212,.18) 0%,rgba(107,185,212,0) 68%);
+  transform:translate(-50%,-50%);left:50%;top:50%;mix-blend-mode:multiply
+}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:72px;align-items:center;position:relative;z-index:1}
+.hero h1{
+  margin:19px 0 0;color:var(--blue);font-family:Manrope,sans-serif;
+  font-size:clamp(4.2rem,9vw,9.3rem);line-height:.76;letter-spacing:-.105em;
+}
+.hero h1 em{
+  display:block;margin-left:.34em;color:#D7961B;font:500 clamp(4rem,8vw,8.5rem)/.85 "Playfair Display",serif;
+  font-style:italic;letter-spacing:-.08em
+}
+.hero-lead{
+  max-width:610px;margin:32px 0 0;color:#58717B;font-size:1.04rem;line-height:1.85
+}
+.hero-lead strong{color:var(--blue)}
+.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:29px}
+.hero-facts{
+  display:flex;gap:35px;flex-wrap:wrap;margin-top:40px;padding-top:20px;border-top:1px solid var(--line)
+}
+.hero-facts strong{display:block;color:var(--blue);font-size:.78rem}
+.hero-facts span{display:block;color:#778A90;font-size:.69rem;margin-top:2px}
+
+/* abstract portrait */
+.hero-visual{height:590px;position:relative;display:grid;place-items:center}
+.frame{
+  width:min(418px,77vw);height:508px;position:relative;transform:rotate(3deg);
+  transition:transform .7s var(--ease)
+}
+.frame:hover{transform:rotate(0deg) translateY(-7px)}
+.frame-main{
+  position:absolute;inset:0;border-radius:220px 220px 38px 38px;overflow:hidden;
+  border:8px solid var(--cream);background:var(--blue);
+  box-shadow:0 38px 80px rgba(8,68,99,.23)
+}
+.frame-main:before{
+  content:"";position:absolute;width:330px;height:330px;border-radius:50%;
+  left:-110px;bottom:-75px;background:var(--yellow);opacity:.95
+}
+.frame-main:after{
+  content:"JB";position:absolute;inset:0;display:grid;place-items:center;
+  color:rgba(255,248,233,.95);font:800 8.4rem/1 Manrope;letter-spacing:-.12em
+}
+.frame-photo{
+  position:absolute;inset:0;z-index:2;width:100%;height:100%;
+  object-fit:cover;object-position:center 18%;max-width:none
+}
+.note{
+  position:absolute;z-index:4;left:-48px;bottom:47px;width:160px;padding:15px 17px;background:var(--yellow);
+  transform:rotate(-7deg);box-shadow:0 19px 37px rgba(8,68,99,.17)
+}
+.note small{
+  display:block;color:var(--blue);font:800 .57rem/1 "DM Mono",monospace;letter-spacing:.13em;text-transform:uppercase
+}
+.note strong{
+  display:block;margin-top:5px;color:var(--blue);font:500 1.55rem/.95 "Playfair Display",serif;font-style:italic
+}
+.sticker{
+  position:absolute;z-index:4;top:55px;right:-25px;width:113px;height:113px;border-radius:50%;
+  display:grid;place-items:center;text-align:center;background:var(--blue);color:#fff;
+  border:2px solid var(--yellow);font:800 .61rem/1.4 "DM Mono",monospace;
+  letter-spacing:.08em;text-transform:uppercase;transform:rotate(10deg)
+}
+.stack-float{
+  position:absolute;z-index:4;right:-17px;bottom:17%;padding:11px 12px;border-radius:15px;
+  background:#fff;border:1px solid var(--line);box-shadow:0 17px 35px rgba(8,68,99,.12);
+  color:var(--blue);font-size:.67rem
+}
+.stack-float b{display:block;color:#A16F00;text-transform:uppercase;letter-spacing:.11em;font-size:.57rem;margin-bottom:2px}

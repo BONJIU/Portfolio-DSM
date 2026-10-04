@@ -1,0 +1,36 @@
+/* ----------------------------------------------------------
+   NAV
+----------------------------------------------------------- */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:200;
+  padding:20px 0;transition:padding .45s var(--ease),background .35s,box-shadow .35s;
+}
+.nav.scrolled{
+  padding:11px 0;background:rgba(255,248,233,.74);backdrop-filter:blur(18px);
+  box-shadow:0 1px 0 var(--line)
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between}
+.brand{
+  display:flex;align-items:center;gap:10px;color:var(--blue);
+  font-weight:800;letter-spacing:-.05em
+}
+.brand-mark{
+  width:38px;height:38px;border-radius:52% 48% 48% 16%;
+  background:var(--yellow);display:grid;place-items:center;transform:rotate(-9deg);
+  box-shadow:0 10px 25px rgba(255,198,79,.25)
+}
+.brand-mark span{transform:rotate(9deg)}
+.nav-links{display:flex;align-items:center;gap:28px;font-size:.79rem;color:#5B727A;font-weight:700}
+.nav-links a{position:relative}
+.nav-links a:after{
+  content:"";position:absolute;left:0;right:100%;bottom:-7px;height:2px;background:var(--blue);
+  transition:right .4s var(--ease)
+}
+.nav-links a:hover:after,.nav-links a.active:after{right:0}
+.nav-talk{
+  padding:10px 16px;border-radius:999px;border:1px solid var(--blue);
+  color:var(--blue)
+}
+.nav-talk:after{display:none!important}
+.nav-talk:hover{background:var(--blue);color:#fff}
+.menu{display:none;border:0;background:none;color:var(--blue);font-size:25px}

@@ -1,0 +1,12 @@
+/* ----------------------------------------------------------
+   MARQUEE
+----------------------------------------------------------- */
+.marquee-zone{position:relative;z-index:2;margin-top:-12px;transform:rotate(-1deg) scale(1.02)}
+.marquee{background:var(--blue);color:#fff;overflow:hidden;padding:17px 0}
+.marquee-track{
+  width:max-content;display:flex;gap:28px;align-items:center;
+  font:800 .69rem/1 Manrope;letter-spacing:.18em;text-transform:uppercase;
+  animation:marquee 26s linear infinite
+}
+.marquee i{color:var(--yellow);font-size:.95rem;font-style:normal}
+@keyframes marquee{to{transform:translateX(-50%)}}

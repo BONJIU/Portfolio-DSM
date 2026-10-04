@@ -1,0 +1,22 @@
+/* ----------------------------------------------------------
+   ABOUT AS AN EDITORIAL SPREAD
+----------------------------------------------------------- */
+.about{
+  position:relative;padding:155px 0 145px;overflow:hidden
+}
+.about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:105px;align-items:start}
+.about-label{position:sticky;top:125px}
+.about-label .giant{
+  color:var(--blue);font:500 clamp(2.8rem,5vw,5.3rem)/.92 "Playfair Display",serif;font-style:italic;letter-spacing:-.06em
+}
+.about-label .giant span{color:var(--sky)}
+.about-label small{
+  display:block;margin-top:24px;color:#A16F00;font:800 .62rem/1 "DM Mono",monospace;letter-spacing:.14em;text-transform:uppercase
+}
+.about-copy{color:#58717B;font-size:1.02rem;line-height:1.95;max-width:690px}
+.about-copy p{margin:0 0 23px}
+.about-copy b{color:var(--blue)}
+.quote{
+  border-left:4px solid var(--yellow);padding:21px 0 21px 26px;margin-top:43px;
+  font:500 1.8rem/1.35 "Playfair Display",serif;font-style:italic;color:var(--blue)
+}

@@ -1,0 +1,92 @@
+/* ----------------------------------------------------------
+   PROJECT SHOWCASE / FULL BLEED STICKY + HORIZONTAL FEEL
+----------------------------------------------------------- */
+.projects{background:var(--cream);padding:145px 0 0}
+.project-head{width:min(1180px,calc(100% - 44px));margin:0 auto 75px}
+.project-head h2{margin-top:15px}
+.project-head p{max-width:650px;color:#657A82;line-height:1.8;margin-top:22px}
+.project-stage{height:360vh;position:relative}
+.project-sticky{
+  position:sticky;top:0;height:100vh;overflow:hidden;display:grid;place-items:center
+}
+.project-bg{position:absolute;inset:0;transition:background .75s var(--ease)}
+.project-canvas{
+  width:min(1250px,calc(100% - 50px));height:min(690px,84vh);
+  position:relative;transform-style:preserve-3d
+}
+.project-card{
+  position:absolute;inset:0;border-radius:38px;overflow:hidden;opacity:0;
+  transform:scale(.92) translateY(50px) rotateX(3deg);
+  transition:opacity .75s var(--ease),transform 1s var(--ease)
+}
+.project-card.active{opacity:1;transform:scale(1) translateY(0) rotateX(0)}
+.pc-visual{
+  position:absolute;inset:0;
+  display:grid;grid-template-columns:1.15fr .85fr;align-items:center;padding:55px
+}
+.pc-one{background:var(--blue);color:#fff}
+.pc-two{background:var(--sky);color:var(--blue)}
+.pc-three{background:var(--yellow);color:var(--blue)}
+.pc-four{background:var(--blue-deep);color:#fff}
+.pc-five{background:var(--blue-night);color:#fff}
+.pc-copy{position:relative;z-index:2;max-width:520px}
+.pc-number{font:800 .66rem/1 "DM Mono",monospace;letter-spacing:.17em;opacity:.72}
+.pc-title{font:800 clamp(3.4rem,7vw,7.7rem)/.82 Manrope;letter-spacing:-.09em;margin:15px 0}
+.pc-desc{max-width:500px;font-size:.98rem;line-height:1.75;opacity:.8}
+.pc-mini{margin-top:22px;font:500 .65rem/1.5 "DM Mono",monospace;text-transform:uppercase;letter-spacing:.07em;opacity:.72}
+.pc-shot{
+  position:relative;height:100%;min-height:350px;display:grid;place-items:center
+}
+.mock-device{
+  width:min(410px,85%);height:62%;border-radius:28px;
+  border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.08);
+  transform:rotate(-5deg);box-shadow:0 34px 60px rgba(0,0,0,.16);
+  position:relative;overflow:hidden;transition:transform .9s var(--ease)
+}
+.project-card.active .mock-device{transform:rotate(-4deg) translateY(-7px)}
+.mock-device:before{
+  content:"";position:absolute;left:16px;right:16px;top:15px;height:6px;border-radius:5px;
+  background:rgba(255,255,255,.55);box-shadow:0 17px rgba(255,255,255,.18),0 34px rgba(255,255,255,.12)
+}
+.mock-device:after{
+  content:"";position:absolute;width:55%;height:55%;right:-14%;bottom:-10%;border-radius:50%;
+  border:40px solid rgba(255,255,255,.12)
+}
+.mock-device img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1
+}
+.mock-device.has-img:before,.mock-device.has-img:after{display:none}
+.mock-label{
+  position:absolute;left:20px;bottom:20px;background:rgba(255,255,255,.88);color:var(--blue);
+  padding:8px 11px;border-radius:999px;font:800 .58rem/1 "DM Mono",monospace;letter-spacing:.1em;
+  z-index:2
+}
+.pc-cta{
+  display:inline-flex;align-items:center;gap:7px;margin-top:22px;font-weight:800;font-size:.75rem;
+  border-bottom:1px solid currentColor;padding-bottom:5px;cursor:pointer
+}
+.project-index{
+  position:absolute;z-index:5;right:34px;top:31px;display:flex;gap:7px
+}
+.p-dot{
+  width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);transition:.35s;cursor:pointer
+}
+.p-dot.on{width:27px;border-radius:10px;background:var(--yellow)}
+.project-progress{
+  position:absolute;z-index:6;bottom:0;left:0;height:4px;width:25%;
+  background:var(--yellow);transition:width .2s linear
+}
+.project-hint{
+  position:absolute;z-index:7;bottom:22px;left:50%;transform:translateX(-50%);
+  color:rgba(255,255,255,.7);font:500 .61rem/1 "DM Mono",monospace;letter-spacing:.1em;text-transform:uppercase;
+  mix-blend-mode:difference
+}
+
+/* ----------------------------------------------------------
+   MAGNETIC / TICKER / COURSES
+----------------------------------------------------------- */
+.explore-line{
+  width:min(1180px,calc(100% - 44px));margin:0 auto;padding:20px 0 85px;
+  display:flex;justify-content:space-between;gap:20px;color:#657A82;font-size:.75rem
+}
+.explore-line b{color:var(--blue)}

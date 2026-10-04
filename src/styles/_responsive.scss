@@ -1,0 +1,53 @@
+/* ----------------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------------- */
+@media(max-width:960px){
+  .nav-links{display:none}.menu{display:block}
+  .nav-links.open{
+    display:flex;position:absolute;top:65px;left:14px;right:14px;
+    flex-direction:column;align-items:stretch;padding:16px;background:rgba(255,248,233,.98);
+    border:1px solid var(--line);border-radius:18px;box-shadow:0 25px 60px rgba(8,68,99,.12)
+  }
+  .nav-talk{text-align:center}
+  .hero-grid,.about-grid,.const-grid,.final-grid{grid-template-columns:1fr}
+  .hero{padding-top:120px}
+  .hero-visual{height:530px}
+  .about-label{position:static}
+  .const-map{margin-top:30px}
+  .exp{grid-template-columns:120px 1fr}
+  .exp-side{grid-column:2}
+  .pc-visual{grid-template-columns:1fr;padding:38px}
+  .pc-shot{display:none}
+  .skills-head{flex-direction:column;align-items:start}
+}
+@media(max-width:600px){
+  .wrap{width:min(100% - 28px,1180px)}
+  .hero h1{font-size:clamp(4rem,19vw,7rem)}
+  .hero h1 em{font-size:clamp(3.8rem,18vw,6.7rem)}
+  .hero-meta,.hero-facts{gap:17px}
+  .hero-visual{height:430px}
+  .frame{width:300px;height:400px}
+  .note{left:-7px}.sticker{right:-4px}
+  .about,.constellation,.experience,.skills-band,.courses,.final{padding:92px 0}
+  .word{font-size:clamp(3.5rem,15vw,6rem)}
+  .const-map{height:420px}
+  .node{width:87px;height:87px;font-size:.58rem}
+  .const-center{width:118px;height:118px;font-size:.69rem}
+  .project-head{width:min(100% - 28px,1180px);margin-bottom:45px}
+  .project-canvas{height:80vh;width:calc(100% - 24px)}
+  .pc-visual{padding:28px}
+  .pc-title{font-size:clamp(3.4rem,16vw,6rem)}
+  .project-hint{bottom:14px;font-size:.52rem}
+  .explore-line{width:min(100% - 28px,1180px);padding-bottom:60px}
+  .course{grid-template-columns:1fr;gap:4px}
+  .course small{text-align:left}
+  .lang{grid-template-columns:1fr;gap:6px}
+  .lang small{text-align:left}
+  .contact-box{padding:30px;min-height:360px}
+  .footer-in{flex-direction:column;align-items:flex-start}
+  .modal-box{padding:28px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
